@@ -1,33 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Title Goes Here</title>
+     <title>Dynamic Play Highlighter</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
  </head>
+ <style>
+    .hamlet{
+       /* background-color: yellow;*/
+    }
+
+    /*
+    #play span{
+      background-color: yellow;
+    }
+    */
+ </style>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
+     <h1>Dynamic Play Highlighter</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
+            <a href="#" target="_blank">Actor Highlighter - DOM Play</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
      
    <main class="wrapper">
-    <p>Content goes here</p>
+      <div id="play">
+         <p><span data-actor="Romeo">Romeo: You were saying nothing while<br> I was proclaiming my love for you.<br> Juliet, I love you!</span></p>
+         <p><span data-actor="Juliet">Juliet: I love you too, my dearest Romeo,<br> But this is all a bit sudden,<br>So good bye.</span></p>
+         <p><span data-actor="Romeo">Romeo: It is so easy to come to my love,<br>But so hard to leave her.</span></p>
+         <p><span data-actor="Juliet">Juliet: I keep trying to leave you out here, <br>But time and time again I find myself drawn back to you. <br>Are you still there Romeo?</span></p>
+         <p><span data-actor="Romeo">Romeo: Yes Juliet, I am here, and I will remain so,<br> My love, until the light in your window has gone dark.
+         </span></p>
+         <p><span data-actor="Juliet">Juliet: Then we may be here forever.<br> It is past time that you leave.<br> I will see you soon my love.</span></p>
+
+      </div>
+
+
+
+      <p>To fulfill the requirements of this assignment, we  created a single page application using the DOM and JavaScript.</p>
+      <p>When we click on a specific actor's name or any associated element, all the lines belonging to that actor in a play will be highlighted. The highlighting can be achieved by applying a bold style or any other visual indicator.</p>
+      <p>The function(s) we created should be able to handle any number of actors and any additional lines that may be added to the page dynamically. This ensures that the highlighting and un-highlighting will work correctly regardless of the number of actors or lines.</p>
+      <p>The page will  perform the required actions without reloading the page, using JavaScript and manipulating the DOM directly. </p>
+      <p>We made necessary modifications to the HTML structure to enable the JavaScript scripts to function properly.</p>
+
+
      <footer>
-      <p><small>&copy; 2021 by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+      <p><small>&copy; 2023 by 
+          Tamim Totakhail, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
           <a id="css-checker" href="#">Check CSS</a></small>
      </p>
     </footer>
   </main>
   <script src="js/main.js"></script>
+  <script src="js/dom-play.js"></script>
  </body>
 </html>
